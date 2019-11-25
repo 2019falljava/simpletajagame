@@ -12,9 +12,9 @@ import java.util.List;
 public class StudentDao {
 	 
 private Connection conn;
-private static final String USERNAME = "아이디";
-private static final String PASSWORD = "비번";
-private static final String URL = "jdbc:mysql://localhost:3306/스키마이름?useSSL=false";
+private static final String USERNAME = "root";
+private static final String PASSWORD = "mysql12!!";
+private static final String URL = "jdbc:mysql://localhost:3306/haedal?useSSL=false";
 
 public StudentDao() {
     // connection객체를 생성해서 디비에 연결해줌..
@@ -60,8 +60,8 @@ public void insertStudent(Student student) {
     }
 }
 
-public List<Student> selectAll() {
-    String sql = "select * from student order by grade;";//DB 상에서 grade로 정렬하기
+public List<Student> slectAll() {
+    String sql = "select * from student order by grade;";
     PreparedStatement pstmt = null;
 
     List<Student> list = new ArrayList<Student>();
