@@ -13,7 +13,7 @@ public class StudentDao {
 	 
 private Connection conn;
 private static final String USERNAME = "root";
-private static final String PASSWORD = "자신의비밀번호";
+private static final String PASSWORD = "mysql12!!";
 private static final String URL = "jdbc:mysql://localhost:3306/haedal?useSSL=false";
 
 public StudentDao() {

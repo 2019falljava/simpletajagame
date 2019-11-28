@@ -272,7 +272,7 @@ public class Component extends JComponent implements ActionListener, KeyListener
 	public void paintComponent(Graphics g) {
 	
 		g.drawImage(background.getImage(), 0, 0,null );	//배경화면 추가
-		//g.drawImage(title.getImage(), 170, 20, null);	//타이틀 추가
+		
 		setOpaque(false);	 //그림을 표시하게 설정,투명하게 조절
         super.paintComponent(g);
 	}
