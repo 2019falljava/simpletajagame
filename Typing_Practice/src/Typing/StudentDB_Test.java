@@ -9,18 +9,18 @@ public class StudentDB_Test {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         StudentDao sDao = new StudentDao();
-       // Student student = new Student();
-      /* 
+       Student student = new Student();
+      
         student.setId(1);
         student.setGrade(123);
         student.setName("sds");
         sDao.insertStudent(student);
+  
         
-        
-  */
+ 
         
 
-        
+       
         List<Student> list = sDao.slectAll();
         
       //결과물 출력

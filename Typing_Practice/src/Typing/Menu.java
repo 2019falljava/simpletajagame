@@ -7,18 +7,15 @@ public class Menu extends JFrame {
 	
 	public static void main(String[] args) {
 
-		JFrame Frame = new JFrame(); 		// JFrame 객체 생성
+		JFrame Frame = new JFrame(); 		// JFrame 媛앹껜 �깮�꽦
 		
-		Frame.setSize(800, 600);			 // JFrame 사이즈
-		Frame.setTitle("Typing Practice");	// JFrame 이름
-		Frame.setLocationRelativeTo(null);	 // JFrame을 모니터의 중앙에 뜨게 함
-		
-		
-		
+		Frame.setSize(800, 600);			 // JFrame �궗�씠利�
+		Frame.setTitle("Typing Practice");	// JFrame �씠由�
+		Frame.setLocationRelativeTo(null);	 // JFrame�쓣 紐⑤땲�꽣�쓽 以묒븰�뿉 �쑉寃� �븿
+
 		Frame.add(new Component());
 		Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Frame.setVisible(true);
 		
 	}
-	
 }
