@@ -28,7 +28,7 @@ public class Component extends JComponent implements ActionListener, KeyListener
    
    private JButton startButton, rankButton, exitButton, easyButton, normalButton, hardButton, startButton2;
    private static ImageIcon nameIcon,numberIcon,background2, background, title, startIcon, rankIcon, exitIcon,
-   easyIcon, easyIconSelected, normalIcon, normalIconSelected, hardIcon, hardIconSelected, inputIcon, lifeIcon;
+   easyIcon, easyIconSelected, normalIcon, normalIconSelected, hardIcon, hardIconSelected, inputIcon, lifeIcon, userIcon;
    
    private JTextField inputUserName, inputUserNumber, inputText;
    private String userName, userNumber;
@@ -53,6 +53,7 @@ public class Component extends JComponent implements ActionListener, KeyListener
       nameIcon = new ImageIcon("image/name.png");
       numberIcon = new ImageIcon("image/number.png");
       lifeIcon = new ImageIcon("image/life.png");
+      userIcon = new ImageIcon("image/user.png");
       inputIcon= new ImageIcon("image/input.png");
 
       /***  라벨 추가  ***/
@@ -67,8 +68,8 @@ public class Component extends JComponent implements ActionListener, KeyListener
       add(inputLabel);
       inputLabel.setVisible(false);
       
-      inputNameLabel = new JLabel(inputIcon);
-      inputNameLabel.setBounds(0, 4, 50, 70);
+      inputNameLabel = new JLabel(userIcon);
+      inputNameLabel.setBounds(0, 0, 90, 90);
       inputNameLabel.setOpaque(true);
       add(inputNameLabel);
       inputNameLabel.setVisible(false);
@@ -203,9 +204,14 @@ public class Component extends JComponent implements ActionListener, KeyListener
       
 
       add(numLabel); // 학번 JLabel을 추가한다
+      numLabel.setBounds(105, 5, 90, 60);
+      numLabel.setFont(new Font("바탕", Font.BOLD+Font.ITALIC, 15));	//글씨체 설정
+      numLabel.setForeground(Color.GRAY);
+      
       add(nameLabel); // 학생이름 JLabel을 추가한다
-      numLabel.setBounds(105, 4, 100, 60);
-      nameLabel.setBounds(110, 34, 100, 60);
+      nameLabel.setBounds(105, 30, 90, 60);
+      nameLabel.setFont(new Font("바탕", Font.BOLD+Font.ITALIC, 15));	//글씨체 설정
+      nameLabel.setForeground(Color.GRAY);
       
       startButton2.setVisible(false); // 시작 버튼 안보이게
       //이름,학번 안보이게
